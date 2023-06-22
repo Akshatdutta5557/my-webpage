@@ -1,0 +1,122 @@
+
+ body{
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+ }   
+.skills{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-column-end: 4;
+    justify-self: center;
+    font-size: x-large;
+
+}
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    font-family: 'Lobster', cursive;
+    background-color: #F9ED69;
+    height:60vh;
+}
+#heading1{
+    grid-area: 2/2/3/4;
+    font-size: xx-large;
+    justify-self: center;
+}
+
+#guitar{
+    grid-area: 2/4/5/5;
+    height: 260px;
+    margin-right: 0px;
+    justify-self:right;
+    margin-left:0px ;
+    position:absolute;
+    align-self:last baseline;
+}
+#code-symbol{
+    height: 40px;
+    margin-left: 10px;
+    
+    margin-top: 10px;
+    grid-area: 1/1/2/2;
+}
+#circle1{
+    background-color: #CCA8E9;
+    height: 60px;
+    width: 60px;
+    position: relative;
+    align-self: center;
+    border-radius: 50%;
+    grid-area: 1/4/2/5;
+}
+#circle2{
+    position:static;
+    background-color: #CCA8E9;
+    height: 55px;
+    width: 55px;
+    justify-self: center;
+    border-radius: 50%;
+    grid-area: 4/1/5/2;
+}
+.aboutme{
+    display: flex;
+    flex-direction: column;
+    background-color: #CADEFC;
+    justify-content: center;
+    align-items: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    flex-wrap: nowrap; 
+}
+#content1{
+    width: 500px;
+}
+#quote{
+    font-family: 'Lobster', cursive;
+    font-size:xx-large;
+}
+#mypic{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-top: 30px;
+}
+.footer{
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: #C3BEF0;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+
+}
+#line{
+    width: 300px;
+}
+@media (max-width: 680px){
+    .hero{
+        height: 97vh;
+    }
+    .skills{
+        flex-direction: column;
+    }
+    #content1{
+        width: 300px;
+    }
+    #line{
+        width: 300px;
+    }
+}
